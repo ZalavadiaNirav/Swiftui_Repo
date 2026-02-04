@@ -30,3 +30,13 @@ final class ItemRepositoryImpl: ItemRepository {
 let service = MockItemService()
 let repository = ItemRepositoryImpl(service: service)
 let useCase = FetchItemsUseCaseImpl(repository: repository)
+
+View
+ ↓
+ViewModel
+ ↓
+UseCase
+ ↓
+Repository
+ ↓
+Network / Local
